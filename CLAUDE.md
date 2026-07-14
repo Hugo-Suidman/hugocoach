@@ -20,7 +20,8 @@ hugocoach/
 ```
 
 - **All website text is hard-coded in the `page.tsx` files.** There is no CMS in use. To change copy, edit the JSX directly.
-- Testimonials: the `testimonials` array at the top of `frontend/src/app/page.tsx`. Each entry needs `logo` (SVG in `frontend/public/logos/`), `quote`/`bold`/`rest` (the quote is split so one segment renders bold), `name`, `role`, `company`, `avatar` (square PNG ~800px in `frontend/public/testimonials/`).
+- Testimonials: the `testimonials` array at the top of `frontend/src/app/page.tsx`. Each entry needs `logo` (in `frontend/public/logos/`), `logoClass` (Tailwind size for the logo box — wide wordmarks use `h-8 w-32`, compact marks get more height, e.g. `h-10 w-24`, so all logos carry similar visual weight), `quote`/`bold`/`rest` (the quote is split so one segment renders bold), `name`, `role`, `company`, `avatar` (square PNG ~800px in `frontend/public/testimonials/`).
+- Logo files are NOT recolored by CSS: every logo must be delivered in brand grey `#94857A` (SVG: set the fill; color PNG: tint all pixels to `#94857A` with alpha = darkness so white knockouts stay transparent) and trimmed of transparent padding before adding.
 - Prices: currently only on the coaching page hero (`frontend/src/app/coaching/page.tsx`).
 - Images: `frontend/public/` (subfolders `home/`, `coaching/`, `about/`, `logos/`, `testimonials/`).
 
