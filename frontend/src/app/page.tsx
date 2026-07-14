@@ -21,6 +21,7 @@ export default function Home() {
   const testimonials = [
     {
       logo: "/logos/forto.svg",
+      logoClass: "h-8 w-32",
       quote: `Hugo is more than a consultant — he's a mentor who is always just a phone call away. He understands our business deeply, challenges us, and `,
       bold: `ensures we remain accountable to our potential`,
       rest: `. His partnership has been vital for our development.`,
@@ -31,6 +32,7 @@ export default function Home() {
     },
     {
       logo: "/logos/generalcatalyst.svg",
+      logoClass: "h-8 w-32",
       quote: `Hugo's ability to address any leadership dilemma with creativity and depth is unparalleled. His counsel is always insightful, whether `,
       bold: `strategizing over business growth or navigating team dynamics`,
       rest: `. He ensures I approach each challenge with confidence.`,
@@ -41,6 +43,7 @@ export default function Home() {
     },
     {
       logo: "/logos/personio.svg",
+      logoClass: "h-8 w-32",
       quote: `Hugo's genuine connection to our leadership team, combined with `,
       bold: `a challenging yet supportive approach`,
       rest: `, has guided us through numerous growth challenges. Both 1:1 coaching and group workshops have proved very valuable.`,
@@ -51,6 +54,7 @@ export default function Home() {
     },
     {
       logo: "/logos/ing.svg",
+      logoClass: "h-8 w-32",
       quote: `Hugo serves not only as a developer of leaders but as a relentless challenger, ensuring `,
       bold: `we remain accountable to our highest potential`,
       rest: `. His guidance has been pivotal in refining our leadership vision and my personal approach as a CEO.`,
@@ -61,6 +65,7 @@ export default function Home() {
     },
     {
       logo: "/logos/knowunity.png",
+      logoClass: "h-8 w-36",
       quote: `Working with Hugo has had a lasting impact on both my leadership and our company. He has challenged my thinking, helped me make better decisions, and supported me through many of the leadership transitions that come with scaling a business. What sets Hugo apart is his ability to combine deep insight with an extremely practical approach. `,
       bold: `Every session results in tangible progress`,
       rest: `. Before meeting him, I wasn't convinced executive coaching was worth the investment. Today, I'm a strong believer and recommend Hugo wholeheartedly.`,
@@ -71,6 +76,7 @@ export default function Home() {
     },
     {
       logo: "/logos/10xgroup.png",
+      logoClass: "h-10 w-24",
       quote: `What stands out about Hugo is his ability to `,
       bold: `combine deep understanding of human dynamics with strong business judgment`,
       rest: `. He creates space for honest reflection while pushing for real movement and accountability. Working with him helped me lead with more clarity, conviction, and trust in my own perspective.`,
@@ -81,6 +87,7 @@ export default function Home() {
     },
     {
       logo: "/logos/theydo.svg",
+      logoClass: "h-9 w-24",
       quote: `What sets Hugo apart is that `,
       bold: `he doesn't come with a fixed playbook, but starts with what you actually need as a leader`,
       rest: `. He challenges you, brings a clear point of view, and helps you look at situations differently. The combination of direct feedback, structure, and deep insight into your strengths and weaknesses has made his coaching highly effective.`,
@@ -91,6 +98,7 @@ export default function Home() {
     },
     {
       logo: "/logos/wayflyer.svg",
+      logoClass: "h-8 w-32",
       quote: `What stood out working with Hugo was his ability to quickly understand our context and `,
       bold: `give opinionated, practical input without pretending there is one right answer`,
       rest: `. He challenged how we think about leadership, trust and decision-making in ways that created clarity and moved the conversation forward. His perspective helped us think more intentionally about how to build the leadership team the company actually needs.`,
@@ -921,7 +929,7 @@ export default function Home() {
                   animation: `${slideDirection === "left" ? "slideFromRight" : "slideFromLeft"} 0.4s ease-out`,
                 }}
               >
-                <div className="relative h-8 w-32">
+                <div className={`relative ${testimonials[activeTestimonial].logoClass}`}>
                   <Image
                     src={testimonials[activeTestimonial].logo}
                     alt={testimonials[activeTestimonial].company}
