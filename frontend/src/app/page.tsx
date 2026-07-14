@@ -59,6 +59,46 @@ export default function Home() {
       company: "ING Germany",
       avatar: "/testimonials/nickjue.png",
     },
+    {
+      logo: "/logos/knowunity.png",
+      quote: `Working with Hugo has had a lasting impact on both my leadership and our company. He has challenged my thinking, helped me make better decisions, and supported me through many of the leadership transitions that come with scaling a business. What sets Hugo apart is his ability to combine deep insight with an extremely practical approach. `,
+      bold: `Every session results in tangible progress`,
+      rest: `. Before meeting him, I wasn't convinced executive coaching was worth the investment. Today, I'm a strong believer and recommend Hugo wholeheartedly.`,
+      name: "Benedict Kurz",
+      role: "Co-Founder & CEO",
+      company: "Knowunity",
+      avatar: "/testimonials/benedictkurz.png",
+    },
+    {
+      logo: "/logos/10xgroup.png",
+      quote: `What stands out about Hugo is his ability to `,
+      bold: `combine deep understanding of human dynamics with strong business judgment`,
+      rest: `. He creates space for honest reflection while pushing for real movement and accountability. Working with him helped me lead with more clarity, conviction, and trust in my own perspective.`,
+      name: "Felix Haas",
+      role: "Partner 10x Group & Chairman",
+      company: "Bits & Pretzels",
+      avatar: "/testimonials/felixhaas.png",
+    },
+    {
+      logo: "/logos/theydo.svg",
+      quote: `What sets Hugo apart is that `,
+      bold: `he doesn't come with a fixed playbook, but starts with what you actually need as a leader`,
+      rest: `. He challenges you, brings a clear point of view, and helps you look at situations differently. The combination of direct feedback, structure, and deep insight into your strengths and weaknesses has made his coaching highly effective.`,
+      name: "Jochem van der Veer",
+      role: "Co-Founder & CEO",
+      company: "TheyDo",
+      avatar: "/testimonials/jochemvanderveer.png",
+    },
+    {
+      logo: "/logos/wayflyer.svg",
+      quote: `What stood out working with Hugo was his ability to quickly understand our context and `,
+      bold: `give opinionated, practical input without pretending there is one right answer`,
+      rest: `. He challenged how we think about leadership, trust and decision-making in ways that created clarity and moved the conversation forward. His perspective helped us think more intentionally about how to build the leadership team the company actually needs.`,
+      name: "Aidan Corbett",
+      role: "CEO",
+      company: "Wayflyer",
+      avatar: "/testimonials/aidancorbett.png",
+    },
   ];
 
   const goToTestimonial = (index: number, direction: "left" | "right") => {
@@ -315,7 +355,7 @@ export default function Home() {
             {/* Left Column: Text & CTA */}
             <div className="flex flex-col lg:sticky lg:top-[128px]">
               <p className="text-[28px] font-bold leading-[1.3] text-[#65564a] lg:text-[32px]">
-                Dare to be your genuine self{" "}
+                Dare to choose your genuine path to growth{" "}
                 <span className="font-normal">
                   and uncover your inner Mozart
                 </span>

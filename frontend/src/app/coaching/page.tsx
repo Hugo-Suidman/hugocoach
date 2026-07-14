@@ -106,11 +106,21 @@ export default function Coaching() {
               twelve months of leadership transformation
             </div>
 
-            <p className="text-[18px] leading-[1.3] text-[#65564a]">
-              Sign up for 12 months for a deep, sustained transformation{" "}
-              <strong>for leaders ready to evolve</strong> personally and
-              strategically
-            </p>
+            <div className="flex flex-col gap-2">
+              <div className="flex items-end gap-[5px]">
+                <span className="text-[32px] font-bold leading-[1.3] text-black">
+                  €20,000
+                </span>
+                <span className="pb-1 text-[20px] font-bold leading-[1.3] text-[#0074b3]">
+                  / 1 Year
+                </span>
+              </div>
+              <p className="text-[18px] leading-[1.3] text-[#65564a]">
+                Sign up for 12 months for a deep, sustained transformation{" "}
+                <strong>for leaders ready to evolve</strong> personally and
+                strategically
+              </p>
+            </div>
 
             <div className="flex flex-col gap-3 sm:flex-row">
               <a
@@ -786,8 +796,8 @@ export default function Coaching() {
 
               <div className="flex flex-1 flex-col justify-between overflow-hidden rounded-[24px] bg-white p-8 lg:h-[300px] lg:p-10">
                 <p className="text-[24px] font-bold leading-[1.1] text-[#0074b3] lg:text-[32px]">
-                  Choose your{" "}
-                  <span className="uppercase text-[#001924]">masks wisely</span>
+                  Meet your{" "}
+                  <span className="uppercase text-[#001924]">future self</span>
                 </p>
                 <p className="mt-4 text-[16px] leading-[1.3] text-[#65564a]">
                   When we work together, I will be your sidekick—available to
@@ -797,8 +807,10 @@ export default function Coaching() {
 
               <div className="flex flex-1 flex-col justify-between overflow-hidden rounded-[24px] bg-white p-8 lg:h-[300px] lg:p-10">
                 <p className="text-[24px] font-bold leading-[1.1] text-[#0074b3] lg:text-[32px]">
-                  Dare to be your{" "}
-                  <span className="uppercase text-[#001924]">genuine self</span>
+                  Dare to choose your{" "}
+                  <span className="uppercase text-[#001924]">
+                    genuine path to growth
+                  </span>
                 </p>
                 <p className="mt-4 text-[16px] leading-[1.3] text-[#65564a]">
                   Whether one-on-one or with your leadership team, we will

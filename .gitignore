@@ -43,5 +43,8 @@ next-env.d.ts
 # Misc
 *.pem
 
+# Local business documents — never commit
+invoices/
+
 
 
