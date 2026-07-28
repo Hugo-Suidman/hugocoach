@@ -28,11 +28,11 @@ export default function Impressum() {
           <p className="text-[18px] leading-[1.5] text-[#65564a]">
             Hugo Suidman
             <br />
-            [Straße und Hausnummer]
+            Elisabethkirchstraße 17
             <br />
-            [PLZ und Ort]
+            10115 Berlin
             <br />
-            [Land]
+            Deutschland
           </p>
         </div>
 
@@ -41,9 +41,21 @@ export default function Impressum() {
             Kontakt
           </p>
           <p className="text-[18px] leading-[1.5] text-[#65564a]">
-            Telefon: [Telefonnummer]
+            E-Mail:{" "}
+            <a
+              href="mailto:hugo@forchiefs.com"
+              className="underline underline-offset-4 transition-colors hover:text-[#012c3f]"
+            >
+              hugo@forchiefs.com
+            </a>
             <br />
-            E-Mail: [E-Mail-Adresse]
+            Website:{" "}
+            <a
+              href="https://hugo.coach"
+              className="underline underline-offset-4 transition-colors hover:text-[#012c3f]"
+            >
+              hugo.coach
+            </a>
           </p>
         </div>
 
@@ -54,7 +66,7 @@ export default function Impressum() {
           <p className="text-[18px] leading-[1.5] text-[#65564a]">
             Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:
             <br />
-            [USt-IdNr.]
+            DE299005653
           </p>
         </div>
 
@@ -65,9 +77,9 @@ export default function Impressum() {
           <p className="text-[18px] leading-[1.5] text-[#65564a]">
             Hugo Suidman
             <br />
-            [Straße und Hausnummer]
+            Elisabethkirchstraße 17
             <br />
-            [PLZ und Ort]
+            10115 Berlin
           </p>
         </div>
 
