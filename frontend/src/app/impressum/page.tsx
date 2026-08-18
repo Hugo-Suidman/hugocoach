@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Impressum | Hugo",
-  description: "Impressum und Anbieterkennzeichnung von hugo.coach.",
+  description: "Legal notice and provider identification for hugo.coach.",
 };
 
 export default function Impressum() {
@@ -23,7 +23,7 @@ export default function Impressum() {
 
         <div className="flex flex-col gap-3">
           <p className="text-[24px] font-bold leading-[1.2] text-[#0074b3]">
-            Angaben gemäß § 5 DDG
+            Information pursuant to § 5 DDG
           </p>
           <p className="text-[18px] leading-[1.5] text-[#65564a]">
             Hugo Suidman
@@ -32,16 +32,16 @@ export default function Impressum() {
             <br />
             10115 Berlin
             <br />
-            Deutschland
+            Germany
           </p>
         </div>
 
         <div className="flex flex-col gap-3">
           <p className="text-[24px] font-bold leading-[1.2] text-[#0074b3]">
-            Kontakt
+            Contact
           </p>
           <p className="text-[18px] leading-[1.5] text-[#65564a]">
-            E-Mail:{" "}
+            Email:{" "}
             <a
               href="mailto:hugo@forchiefs.com"
               className="underline underline-offset-4 transition-colors hover:text-[#012c3f]"
@@ -61,10 +61,11 @@ export default function Impressum() {
 
         <div className="flex flex-col gap-3">
           <p className="text-[24px] font-bold leading-[1.2] text-[#0074b3]">
-            Umsatzsteuer-Identifikationsnummer
+            VAT Identification Number
           </p>
           <p className="text-[18px] leading-[1.5] text-[#65564a]">
-            Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:
+            VAT identification number pursuant to § 27 a of the German Value
+            Added Tax Act (Umsatzsteuergesetz):
             <br />
             DE299005653
           </p>
@@ -72,7 +73,7 @@ export default function Impressum() {
 
         <div className="flex flex-col gap-3">
           <p className="text-[24px] font-bold leading-[1.2] text-[#0074b3]">
-            Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
+            Responsible for the content pursuant to § 18 (2) MStV
           </p>
           <p className="text-[18px] leading-[1.5] text-[#65564a]">
             Hugo Suidman
@@ -85,11 +86,11 @@ export default function Impressum() {
 
         <div className="flex flex-col gap-3">
           <p className="text-[24px] font-bold leading-[1.2] text-[#0074b3]">
-            Streitschlichtung
+            Dispute Resolution
           </p>
           <p className="text-[18px] leading-[1.5] text-[#65564a]">
-            Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren
-            vor einer Verbraucherschlichtungsstelle teilzunehmen.
+            We are neither willing nor obliged to participate in dispute
+            resolution proceedings before a consumer arbitration board.
           </p>
         </div>
       </section>
