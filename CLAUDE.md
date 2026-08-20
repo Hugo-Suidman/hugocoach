@@ -40,6 +40,29 @@ npm run build      # MUST pass before every push
 - Workflow for every change: edit → `npm run dev` and check the affected pages in the browser → `npm run build` passes → commit with a clear message → push.
 - To undo a bad deploy: revert the commit and push again, or promote a previous deployment in the Vercel dashboard.
 
+## Privacy: this site is cookie-free, keep it that way
+
+As of 20 August 2026 this site sets **no cookies**, loads **no third-party scripts**, runs **no analytics**, and serves its fonts from its own server. Verified in-browser: 0 cookies, 0 localStorage/sessionStorage entries, 0 third-party requests. That is exactly why it needs no consent banner (§ 25 (2) TDDDG) and why the privacy policy at `/privacy` says so in writing.
+
+**STOP and ask the site owner before adding any of the following.** Each one breaks that state, triggers a consent-banner obligation and requires the privacy policy to be rewritten:
+
+- web analytics of any kind (Google Analytics, Plausible, Vercel Analytics/Speed Insights, PostHog, Hotjar …)
+- embedded third-party media (YouTube, Vimeo, Spotify, Google Maps)
+- fonts or icons loaded from an external domain: always use `next/font`, which self-hosts
+- chat widgets, booking widgets, tracking pixels, A/B testing tools
+- any `<script src="https://…">` pointing off-domain
+
+Adding one of these is never a "small change". Flag it, do not just do it.
+
+Check the current state at any time:
+
+```bash
+curl -sI https://hugo.coach/ | grep -i set-cookie          # expect: no output
+curl -s https://hugo.coach/ | grep -oE 'https://[a-z0-9.-]+' | sort -u   # expect: only own/link domains
+```
+
+If anything is added, update `frontend/src/app/privacy/page.tsx` in the same change.
+
 ## Hard rules
 
 1. **Never touch `backend/`.** It is unused legacy. No edits, no deploys, no dependency updates.

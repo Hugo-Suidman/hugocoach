@@ -100,12 +100,21 @@ export default function Impressum() {
         <p className="text-[15px] leading-[1.3] text-[#94857a]">
           Copyright {new Date().getFullYear()}, All Rights Reserved
         </p>
-        <Link
-          href="/impressum"
-          className="mt-2 inline-block text-[15px] leading-[1.3] text-[#94857a] underline underline-offset-4 transition-opacity hover:opacity-70"
-        >
-          Imprint
-        </Link>
+        <p className="mt-2 text-[15px] leading-[1.3] text-[#94857a]">
+          <Link
+            href="/impressum"
+            className="underline underline-offset-4 transition-opacity hover:opacity-70"
+          >
+            Imprint
+          </Link>
+          <span className="px-2">·</span>
+          <Link
+            href="/privacy"
+            className="underline underline-offset-4 transition-opacity hover:opacity-70"
+          >
+            Privacy Policy
+          </Link>
+        </p>
       </footer>
     </main>
   );
