@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Impressum | Hugo",
+  title: "Imprint | Hugo",
   description: "Legal notice and provider identification for hugo.coach.",
 };
 
@@ -18,7 +18,7 @@ export default function Impressum() {
         </Link>
 
         <p className="text-[48px] font-bold leading-[1.1] text-[#012c3f] lg:text-[64px]">
-          Impressum
+          Imprint
         </p>
 
         <div className="flex flex-col gap-3">
@@ -104,7 +104,7 @@ export default function Impressum() {
           href="/impressum"
           className="mt-2 inline-block text-[15px] leading-[1.3] text-[#94857a] underline underline-offset-4 transition-opacity hover:opacity-70"
         >
-          Impressum
+          Imprint
         </Link>
       </footer>
     </main>

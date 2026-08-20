@@ -1133,7 +1133,7 @@ export default function Home() {
           href="/impressum"
           className="mt-2 inline-block text-[15px] leading-[1.3] text-[#94857a] underline underline-offset-4 transition-opacity hover:opacity-70"
         >
-          Impressum
+          Imprint
         </Link>
       </footer>
 
